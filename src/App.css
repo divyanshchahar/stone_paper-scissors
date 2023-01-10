@@ -6,6 +6,8 @@
 
 :root {
   --p0: 5vh;
+  --b0: 2px;
+  --p1: 5%;
 
   --container-1_b: 2px;
   --container-1_p: 0.5vw;
@@ -30,7 +32,8 @@ h1 {
   margin: calc(5 * var(--container-1_p));
   border-radius: 5px;
   width: fit-content;
-  float: right;
+  position: absolute;
+  right: 0px;
 }
 
 .special-text-button-1 {
@@ -50,6 +53,25 @@ h1 {
 
 .choice-button img {
   height: var(--choice-button_h);
+}
+
+.container-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-2 {
+  width: fit-content;
+  border-left: var(--b0) solid black;
+  padding-left: var(--p1);
+}
+
+.player-1 {
+  width: fit-content;
+  border-right: var(--b0) solid black;
+  padding-right: var(--p1);
 }
 
 /* 
