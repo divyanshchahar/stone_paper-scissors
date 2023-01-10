@@ -6,11 +6,33 @@
 
 :root {
   --p0: 5vh;
+
+  --container-1_b: 2px;
+  --container-1_p: 0.5vw;
+
+  --special-text-button-1_p: 1vw;
+
+  --border-1: rgba(255, 0, 0, 1);
 }
 
 h1 {
   text-align: center;
   padding: var(--p0);
+}
+
+.container-1 {
+  border: var(--container-1_b) solid var(--border-1);
+  padding: var(--container-1_p);
+  margin: calc(5 * var(--container-1_p));
+  border-radius: 5px;
+  width: fit-content;
+  float: right;
+}
+
+.special-text-button-1 {
+  display: inline-block;
+  padding: var(--special-text-button-1_p);
+  font-weight: 600;
 }
 
 /* 
@@ -22,6 +44,12 @@ h1 {
 @media screen and (min-width: 429px) {
   :root {
     --p0: 5vh;
+    --container-1_b: 2px;
+    --container-1_p: 0.5vw;
+
+    --special-text-button-1_p: 1vw;
+
+    --border-1: rgba(255, 0, 0, 1);
   }
 }
 
@@ -33,5 +61,12 @@ h1 {
 @media screen and (min-width: 1025px) {
   :root {
     --p0: 5vh;
+
+    --container-1_b: 2px;
+    --container-1_p: 0.25vw;
+
+    --special-text-button-1_p: 1vw;
+
+    --border-1: rgba(255, 0, 0, 1);
   }
 }
