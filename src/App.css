@@ -6,6 +6,8 @@
 
 :root {
   --p0: 5vh;
+  --b0: 2px;
+  --p1: 5%;
 
   --container-1_b: 2px;
   --container-1_p: 0.5vw;
@@ -13,6 +15,10 @@
   --special-text-button-1_p: 1vw;
 
   --border-1: rgba(255, 0, 0, 1);
+
+  --choice-button_h: 10vh;
+  --choice-button_p: calc(0.1 * var(--choice-button_h));
+  --choice-button_br: 5%;
 }
 
 h1 {
@@ -26,13 +32,46 @@ h1 {
   margin: calc(5 * var(--container-1_p));
   border-radius: 5px;
   width: fit-content;
-  float: right;
+  position: absolute;
+  right: 0px;
 }
 
 .special-text-button-1 {
   display: inline-block;
   padding: var(--special-text-button-1_p);
   font-weight: 600;
+}
+
+.choice-button {
+  width: fit-content;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: var(--choice-button_br);
+  padding: var(--choice-button_p);
+  margin: var(--choice-button_p);
+}
+
+.choice-button img {
+  height: var(--choice-button_h);
+}
+
+.container-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-2 {
+  width: fit-content;
+  border-left: var(--b0) solid black;
+  padding-left: var(--p1);
+}
+
+.player-1 {
+  width: fit-content;
+  border-right: var(--b0) solid black;
+  padding-right: var(--p1);
 }
 
 /* 
