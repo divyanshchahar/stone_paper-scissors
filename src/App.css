@@ -13,6 +13,10 @@
   --special-text-button-1_p: 1vw;
 
   --border-1: rgba(255, 0, 0, 1);
+
+  --choice-button_h: 10vh;
+  --choice-button_p: calc(0.1 * var(--choice-button_h));
+  --choice-button_br: 5%;
 }
 
 h1 {
@@ -33,6 +37,19 @@ h1 {
   display: inline-block;
   padding: var(--special-text-button-1_p);
   font-weight: 600;
+}
+
+.choice-button {
+  width: fit-content;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: var(--choice-button_br);
+  padding: var(--choice-button_p);
+  margin: var(--choice-button_p);
+}
+
+.choice-button img {
+  height: var(--choice-button_h);
 }
 
 /* 
